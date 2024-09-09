@@ -1,0 +1,107 @@
+/* Algemene stijlen */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header/Banner */
+.banner {
+    background-color: #ff7f00; /* Oranje kleur */
+    color: white;
+    padding: 40px 20px; /* Maakt de balk opvallender en ruimer */
+    text-align: center;
+    position: relative;
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 2.5em; /* Grote, opvallende tekst */
+}
+
+/* Navigatiebalk */
+.menu {
+    position: absolute;
+    bottom: 10px; /* Plaatst het menu aan de onderkant van de header */
+    width: 100%;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.menu ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Transparante achtergrond bij hover */
+    border-radius: 5px;
+}
+/* Logo Stijlen */
+.logo-container {
+    text-align: center;
+    margin: 20px 0; /* Ruimte rondom het logo */
+}
+
+.logo {
+    max-width: 200px; /* Maximaal 200px breed */
+    width: 100%; /* Zorgt ervoor dat het logo zichzelf aanpast */
+    height: auto; /* Zorgt voor behoud van de verhoudingen */
+}
+
+
+/* Responsiveness: Voor schermen kleiner dan 768px */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 1.5em; /* Kleinere koptekst op kleinere schermen */
+    }
+
+    .menu ul {
+        flex-direction: row; /* Menu wordt verticaal op mobiele schermen */
+        padding: 0;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+    .logo {
+        max-width: 150px; /* Logo wordt kleiner op mobiele apparaten */
+    }
+    
+}
+#diensten, #home {
+    text-align: center;
+    padding: 15px;
+}
+.text-pic{
+    max-width: 80%;
+    height:180px;
+    border-radius: 15px;
+}
+ol{
+    list-style-type: none;
+    padding-left: 0; /* Optioneel, om de inspringing te verwijderen */
+      
+}
+#diensten{
+    background-color: #ff7f00;
+    color:white;
+}
+.line{
+    color: 3px solid white;
+    width: 80%
+}
