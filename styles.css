@@ -12,7 +12,7 @@ body {
 .banner {
     background-color: #ff7f00; /* Oranje kleur */
     color: white;
-    padding: 40px 20px; /* Maakt de balk opvallender en ruimer */
+    
     text-align: center;
     position: relative;
     width: 100%; /* Veranderd van 100vw naar 100% om overflow te voorkomen */
@@ -94,7 +94,7 @@ body {
     }
 }
 
-#diensten, #home {
+#diensten, #home, #contact, #over {
     text-align: center;
     padding: 15px;
 }
@@ -111,6 +111,10 @@ ol {
 }
 
 #diensten {
+    background-color: #ff7f00;
+    color: white;
+}
+#contact{
     background-color: #ff7f00;
     color: white;
 }
