@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    box-sizing: border-box;
 }
 
 /* Header/Banner */
@@ -13,6 +14,9 @@ body {
     padding: 40px 20px; /* Maakt de balk opvallender en ruimer */
     text-align: center;
     position: relative;
+    width: 100vw; /* 100% van de viewport breedte */
+    box-sizing: border-box; /* Houdt rekening met de padding in de totale breedte */
+    margin: 0;
 }
 
 .banner h1 {
@@ -25,6 +29,7 @@ body {
     position: absolute;
     bottom: 10px; /* Plaatst het menu aan de onderkant van de header */
     width: 100%;
+    box-sizing: border-box;
 }
 
 .menu ul {
@@ -33,6 +38,7 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .menu ul li {
@@ -76,7 +82,7 @@ body {
     }
 
     .menu ul li {
-        margin: 10px 0;
+        margin: 0;
     }
     .logo {
         max-width: 150px; /* Logo wordt kleiner op mobiele apparaten */
