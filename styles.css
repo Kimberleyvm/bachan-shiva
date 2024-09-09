@@ -49,7 +49,7 @@ body {
 .menu ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 10px 15px;
     transition: background-color 0.3s;
 }
@@ -83,7 +83,11 @@ body {
     }
 
     .menu ul li {
-        margin: 0;
+        margin: 10px 0;
+    }
+    .menu ul li a {
+        font-size: 1em; /* Kleiner lettertype voor de menu-items op kleine schermen */
+        padding: 8px 12px; /* Iets minder padding voor betere pasvorm op kleine schermen */
     }
     .logo {
         max-width: 150px; /* Logo wordt kleiner op mobiele apparaten */
