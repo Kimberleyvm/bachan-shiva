@@ -199,4 +199,8 @@ ol {
 #backToTop:hover {
     background-color: #e76b00; /* Donkerdere tint bij hover */
 }
+footer, a{
+    text-decoration: none;
+    color: white;
+}
 
