@@ -58,6 +58,9 @@ body {
     background-color: rgba(255, 255, 255, 0.2); /* Transparante achtergrond bij hover */
     border-radius: 5px;
 }
+h1{
+    text-align: center;
+}
 
 /* Logo Stijlen */
 .logo-container {
@@ -95,14 +98,32 @@ body {
 }
 
 #diensten, #home, #contact, #over {
-    text-align: center;
-    padding: 15px;
+    max-width: 800px; /* Max breedte voor grotere schermen */
+    margin: 0 auto; /* Centreert de container */
+    padding: 20px; /* Voeg wat padding toe zodat de tekst niet tegen de rand plakt */
+    text-align: left; /* Tekst links uitlijnen */
+    box-sizing: border-box; /* Zorgt ervoor dat padding binnen de breedte wordt berekend */
 }
 
+/* Responsiveness: Voor kleinere schermen */
+@media (max-width: 768px) {
+    .text-container {
+        max-width: 90%; /* Maakt de tekstcontainer flexibeler op kleinere schermen */
+        padding: 15px; /* Iets minder padding voor mobiel */
+    }
+}
+.title, ol, li{
+    text-align: center;
+}
+.title{
+    color:#a44806
+}
 .text-pic{
     max-width: 80%;
     height: 180px;
     border-radius: 15px;
+    display: block; /* Maakt de afbeelding een block-element */
+    margin: 0 auto; /* Centreert de afbeelding horizontaal */
 }
 
 ol {
