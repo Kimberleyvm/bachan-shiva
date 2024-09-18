@@ -13,11 +13,18 @@
             <h1><i>Kundalini Yoga<br>the yoga of awareness</i></h1>
             <br>
             <br>
-            <!-- Navigatiebalk -->
+            <br>
             <nav class="menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#diensten">Diensten</a></li>
+                    <li class="dropdown">
+                        <a href="#diensten" class="dropbtn">Diensten</a>
+                        <div class="dropdown-content">
+                            <a href="#school">School</a>
+                            <a href="#werk">Werk</a>
+                            <a href="#priveles">Privéles</a>
+                        </div>
+                    </li>
                     <li><a href="#over">Over Mij</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -55,7 +62,7 @@
         <hr class="line">
     
         <!-- Voor Bedrijven -->
-        <h3 class="title">Voor Bedrijven</h3>
+         <section id="werk"><h3 class="title">Voor Bedrijven</h3>
         <p>In de hectische wereld van vandaag worden bedrijven vaak geconfronteerd met stressgerelateerde uitdagingen zoals burn-out en verminderde productiviteit. Werknemers presteren op hun best wanneer ze zich mentaal en fysiek goed voelen. Daarom is het belangrijk om te investeren in welzijnsprogramma's die gericht zijn op het verbeteren van zowel de lichamelijke als de geestelijke gezondheid van uw team.</p>
     
         <h3 class="title"><i>Voordelen van Kundalini Yoga voor Werknemers:</i></h3>
@@ -74,10 +81,11 @@
         <p>Bedrijven die Kundalini Yoga implementeren, zien vaak verbeterde productiviteit, tevredenheid en een daling van stressgerelateerde uitval. Dit draagt bij aan een gezonde werkcultuur en verlaagt het ziekteverzuim.</p>
         <i><b>Start vandaag nog! Neem <a href="#contact">contact</a> op voor een op maat gemaakt programma dat aansluit bij de behoeften van uw team.</b></i><br>
         <br>
-        <hr class="line">
+        <hr class="line"></section>
+        
     
         <!-- Voor Scholen -->
-        <h3 class="title">Voor Scholen</h3>
+         <section id="school"><h3 class="title">Voor Scholen</h3>
         <p>In de moderne schoolomgeving worden studenten vaak geconfronteerd met stressvolle situaties en prestatiedruk, wat kan leiden tot verminderde focus en zelfs burn-out. Scholen spelen een cruciale rol in het ondersteunen van het mentale en fysieke welzijn van hun studenten.</p>
     
         <h3 class="title"><i>Voordelen van Kundalini Yoga voor Studenten:</i></h3>
@@ -93,9 +101,11 @@
         <h3 class="title">Wilt u Kundalini Yoga op school introduceren?</h3>
         <p>Neem vandaag nog <a href="#contact">contact</a> op en ontdek hoe we een programma kunnen ontwikkelen dat perfect aansluit bij de behoeften van uw studenten.</p>
         <hr class="line">
-        <h3 class="title"> Privéles</h3>
+        <section id="priveles"><h3 class="title"> Privéles</h3>
         <p>Tijdens een privéles Kundalini Yoga krijg je de kans om op een diep en persoonlijk niveau te werken aan jouw specifieke behoeften en doelen. Voorafgaand aan de lessen kijken we naar je Ayurvedische constitutie en nummerologie om een programma op maat samen te stellen dat volledig op jou is afgestemd. We kunnen de Kriya’s, specifieke reeksen van houdingen, ademhalingstechnieken en meditaties, zowel preventief als therapeutisch inzetten. Kriya's zijn ontworpen om bepaalde energieën in het lichaam te activeren, blokkades op te heffen, en zowel fysieke als mentale balans te bevorderen. Hierdoor kunnen ze effectief ondersteunen in het voorkomen van problemen en het gericht behandelen van bestaande klachten. De een-op-een begeleiding stelt ons in staat om jouw unieke situatie diepgaand te benaderen, zodat je veilig en effectief maximale vooruitgang kunt boeken in je yogapraktijk en persoonlijke ontwikkeling.</p>
-        <img class="text-pic" src="img/chakra.jpg" alt="chakra colored">
+        <img class="text-pic" src="img/chakra.jpg" alt="chakra colored"></section>
+        </section>
+        
     </section>
     
     <section id="over">
@@ -118,6 +128,29 @@
 
     <h3 class="title"><b>Neem vandaag nog <a href="mailto:info@bachanshiva.nl">contact</a> op om meer te weten te komen!</b></h3>
 </section>
-
+<!-- Back to Top Button -->
+<button onclick="topFunction()" id="backToTop" title="Ga naar boven">⬆️</button>
+<script>
+    // Knop ophalen
+    let backToTopBtn = document.getElementById("backToTop");
+    
+    // Laat de knop zien wanneer de gebruiker naar beneden scrollt
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            backToTopBtn.style.display = "block"; // Toon de knop na 300px scrollen
+        } else {
+            backToTopBtn.style.display = "none"; // Verberg de knop
+        }
+    }
+    
+    // Scroll naar boven wanneer de gebruiker op de knop klikt
+    function topFunction() {
+        document.body.scrollTop = 0; // Voor Safari
+        document.documentElement.scrollTop = 0; // Voor Chrome, Firefox, IE en Opera
+    }
+    </script>
+    
 </body>
 </html>
