@@ -61,6 +61,10 @@ body {
 h1{
     text-align: center;
 }
+.intro-text{
+    text-align: center;
+    font-size: large;
+}
 
 /* Logo Stijlen */
 .logo-container {
@@ -112,10 +116,10 @@ h1{
         padding: 15px; /* Iets minder padding voor mobiel */
     }
 }
-.title, ol, li{
+.title, ol, li, h2{
     text-align: center;
 }
-.title{
+.title, h2, h1{
     color:#a44806
 }
 .text-pic{
@@ -138,6 +142,9 @@ ol {
 #contact{
     background-color: #ff7f00;
     color: white;
+}
+.middle{
+    text-align: center;
 }
 
 .line {
